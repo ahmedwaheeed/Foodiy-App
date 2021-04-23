@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "596373031540",
+    "project_id": "food-delivery-app-27af0",
+    "storage_bucket": "food-delivery-app-27af0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596373031540:android:390435725c19fbc3aadf21",
+        "android_client_info": {
+          "package_name": "com.ahmed.waheed.project.firebase.fooddelivaryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596373031540-i07nbj60anfkc2qjbkbraplrq6tk8tqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD0ibsIo5U-nAVsn_d99osMd4PmASBqPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596373031540-i07nbj60anfkc2qjbkbraplrq6tk8tqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

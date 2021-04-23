@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Welcome Back!"
+              android:textSize="30sp"
+              android:textColor="#333333"
+              app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@+id/cardView"
+              app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+              app:layout_constraintHorizontal_bias="0.0" android:id="@+id/textView"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Now you can order you food easily.."
+              android:textSize="14sp"
+
+              app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="@+id/cardView" android:layout_marginTop="2dp"
+              app:layout_constraintHorizontal_bias="0.0" android:id="@+id/textView2"/>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="200dp"
+                                       app:layout_constraintStart_toStartOf="parent"
+                                       app:layout_constraintBottom_toBottomOf="parent"
+                                       app:layout_constraintEnd_toEndOf="parent"
+                                       app:layout_constraintTop_toBottomOf="@+id/textView2"
+                                       app:layout_constraintHorizontal_bias="0.0"
+                                       app:layout_constraintVertical_bias="0.03"
+                                       app:cardPreventCornerOverlap="false"
+                                       android:layout_margin="10dp"
+                                       app:cardCornerRadius="15dp"
+                                       app:cardElevation="4dp"
+                                       android:id="@+id/cardView">
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                   android:src="@drawable/browse"
+                   android:id="@+id/browse_image"
+                   android:scaleType="centerCrop"/>
+
+        <View android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@drawable/gradient"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_gravity="bottom"
+                                                           android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Browse Restaurants"
+                      android:layout_gravity="start|bottom"
+                      android:padding="16dp"
+                      android:textSize="20sp"
+                      android:textColor="#fff" app:layout_constraintBottom_toBottomOf="parent"
+                      android:id="@+id/textView4" app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_round_keyboard_arrow_right_24"
+                       android:layout_gravity="end|bottom"
+                       android:padding="10dp"
+
+                       app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/textView4"
+                       app:layout_constraintBottom_toBottomOf="@+id/textView4"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Order Again"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_again_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/offers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="New Offers!"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/order_again_recyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_offers_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/offers"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
